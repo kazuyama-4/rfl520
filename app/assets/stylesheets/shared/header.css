@@ -1,0 +1,73 @@
+/* header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+.page-header h1 {
+  color: springgreen;
+  font-size: 30px;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0  auto;
+  padding: 0 4%;
+}
+/* nav */
+.nav {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1vh 0;
+}
+
+.lists-left {
+  display: flex;
+  min-width: 200px;
+
+}
+
+.management-tag {
+  text-decoration: none;
+  margin: 0 3vw;
+  color: #333333;
+}
+
+.shop-tag {
+  text-decoration: none;
+  color: #333333;
+}
+
+.lists-right {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+
+.user-nickname {
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: bold;
+}
+
+
+.logout {
+  text-decoration: none;
+  color: #333333;
+}
+
+.login {
+  text-decoration: none;
+  line-height: 32px;
+  margin-right: 3vw;
+  color: #333333;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #333333;
+}

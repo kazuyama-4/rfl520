@@ -1,0 +1,37 @@
+<%= render "shared/header" %>
+<div class='main'>
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      We'll Reduce Food Loss 
+    </h2>
+    <p class='service-explain'>
+      家庭でのフードロスを削減しよう！！
+    </p>
+  </div>
+  <div class='feature-contents'>
+    <h2 class='title'>
+      RFL特徴
+    </h2>
+    <ul class='feature-lists'>
+      <li class='list'>
+        <%= image_tag "management.jpg", class:"list-pict" %>
+        <h3 class='feature-list-text'>
+          食材の管理ができる
+        </h3>
+        <p class='feature-list-description'>
+          賞味期限管理ができ、食べずに捨てるこんな無駄を無くします！
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "shopping.jpg", class:"list-pict" %>
+        <h3 class='feature-list-text'>
+          買い物リストも作れる
+        </h3>
+        <p class='feature-list-description'>
+          買い物のし忘れがなくなり、家の食材管理を簡単にしてくれます
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+<%= render "shared/footer" %>
