@@ -3,9 +3,10 @@
   display: flex;
   justify-content: space-between;
 }
-.page-header h1 {
+.top-tag {
   color: springgreen;
   font-size: 30px;
+  text-decoration: none;
 }
 
 .wrapper {
