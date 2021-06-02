@@ -22,41 +22,42 @@
 }
 .food-meat {
   width: 43vw;
-  height: 20vh;
+  height: 5vh;
   font-size: 20px;
   text-align: center;
   background-color: crimson;
 }
 .food-frozen {
   width: 43vw;
-  height: 20vh;
+  height: 5vh;
   font-size: 20px;
   text-align: center;
   background-color: skyblue;
 }
 .food-drink {
   width: 43vw;
-  height: 20vh;
+  height: 5vh;
   font-size: 20px;
   text-align: center;
   background-color: yellow;
 }
 .food-seasoning {
   width: 43vw;
-  height: 20vh;
+  height: 5vh;
   font-size: 20px;
   text-align: center;
   background-color: darksalmon;
 }
 .food-etc {
   width: 43vw;
-  height: 20vh;
+  height: 5vh;
   font-size: 20px;
   text-align: center;
   background-color: gray;
 }
 .food {
   width: 100vw;
+  height: 15vh;
   list-style: none;
   display: flex;
 }
