@@ -11,39 +11,46 @@
   background-color: white;
   border: 1px solid black;
   margin-right: 60px;
+  flex-basis: auto;
 }
 .food-vegetable {
   width: 43vw;
-  font-size: 10px;
+  height: 20vh;
+  font-size: 20px;
   text-align: center;
   background-color: chartreuse;
 }
 .food-meat {
   width: 43vw;
-  font-size: 10px;
+  height: 20vh;
+  font-size: 20px;
   text-align: center;
   background-color: crimson;
 }
 .food-frozen {
   width: 43vw;
-  font-size: 10px;
+  height: 20vh;
+  font-size: 20px;
   text-align: center;
   background-color: skyblue;
 }
 .food-drink {
   width: 43vw;
-  font-size: 10px;
+  height: 20vh;
+  font-size: 20px;
   text-align: center;
   background-color: yellow;
 }
 .food-seasoning {
   width: 43vw;
-  font-size: 10px;
+  height: 20vh;
+  font-size: 20px;
   text-align: center;
   background-color: darksalmon;
 }
 .food-etc {
   width: 43vw;
+  height: 20vh;
   font-size: 20px;
   text-align: center;
   background-color: gray;
