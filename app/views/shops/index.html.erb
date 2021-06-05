@@ -1,94 +1,33 @@
 <%= render "shared/header" %>
 <main class="main">
-  <div class="inner">
-    <div class="page-top">
-      <h1 class="page-heading">買い物リスト</h1>
-      <input class="add-submit" type="submit" value="食材管理に追加">
-      <input class="reset-submit" type="submit" value="リセット">
+  <div class="shop">
+    <div class="shop-list">
+      <div class="vegetable">
+        <div class="food-vegetable">買い物リスト</div>
+        <% @shops.each do |shop| %>
+        <ul class="food">
+          <li class="food-detail"><%= shop.stuff %></li>
+        </ul>
+        <% end %>
+      </div>
     </div>
-    <div class="card__wrapper">
-      <div class="card">
-        <div class="card__body">
-          <h2 class="card__title">野菜・果物</h2>
-          <ul class="card__summary">
-            <li>食品</li>
-          </ul>
-          <div class="form">
-            <div class="form-input">
-              <input class="form-foodstuff" placeholder= "食材名をお入れください">
+    <div class="shop-purpose">
+      <div class="purpose-title">入力フォーム</div>
+        <div class="purpose-main">
+          <%= form_with model: @shop, url: shops_path, method: :post, id: "form js-form", class: 'item-shop', local: true do |f| %>
+            <div class="purpose">
+              <div class='purpose-text-wrap'>
+                <label class="purpose-text">食材名</label>
+                <span class="indispensable">必須</span>
+              </div>
+              <%= f.text_area :stuff, class:"form__text-field js-form__text-field", id:"form__text-field js-form__text-field", placeholder:"食材名を入力"%>
             </div>
-            <input class="form-submit" type="submit" value="追加">
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__body">
-          <h2 class="card__title">肉・魚・卵など</h2>
-          <ul class="card__summary">
-            <li>食品</li>
-          </ul>
-          <div class="form">
-            <div class="form-input">
-              <input class="form-foodstuff" placeholder= "食材名をお入れください">
+            <div class="purpose">
+              <div class="add-btn-purpose">
+                <%= f.submit "加える" ,id: "form__submit js-submit", class:"form__submit js-submit" %>
+              </div>
             </div>
-            <input class="form-submit" type="submit" value="追加">
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__body">
-          <h2 class="card__title">冷凍食品</h2>
-          <ul class="card__summary">
-            <li>食品</li>
-          </ul>
-          <div class="form">
-            <div class="form-input">
-              <input class="form-foodstuff" placeholder= "食材名をお入れください">
-            </div>
-            <input class="form-submit" type="submit" value="追加">
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__body">
-          <h2 class="card__title">飲料水</h2>
-          <ul class="card__summary">
-            <li>食品</li>
-          </ul>
-          <div class="form">
-            <div class="form-input">
-              <input class="form-foodstuff" placeholder= "食材名をお入れください">
-            </div>
-            <input class="form-submit" type="submit" value="追加">
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__body">
-          <h2 class="card__title">調味料</h2>
-          <ul class="card__summary">
-            <li>食品</li>
-          </ul>
-          <div class="form">
-            <div class="form-input">
-              <input class="form-foodstuff" placeholder= "食材名をお入れください">
-            </div>
-            <input class="form-submit" type="submit" value="追加">
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card__body">
-          <h2 class="card__title">保存食</h2>
-          <ul class="card__summary">
-            <li>食品</li>
-          </ul>
-          <div class="form">
-            <div class="form-input">
-              <input class="form-foodstuff" placeholder= "食材名をお入れください">
-            </div>
-            <input class="form-submit" type="submit" value="追加">
-          </div>
+          <% end %>
         </div>
       </div>
     </div>
