@@ -3,17 +3,14 @@ class ShopsController < ApplicationController
     @shop = Shop.new
     @shops = Shop.order('created_at ASC')
   end
-
+  
   def create
     @shop = Shop.new(shop_params)
     if @shop.save
-      respond_to do |format|
-        format.html { redirect_to action: :index }
-        format.json { render json: @shop }
-      end
+      redirect_to shops_path(@shop)
     else
       @shops = Shop.includes(:user)
-      render :index, alert: 'Todoを入力してください'
+      render :index
     end
   end
 
