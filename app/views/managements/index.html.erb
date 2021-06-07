@@ -5,6 +5,7 @@
       <div class="vegetable">
         <div class="food-vegetable">野菜・果物</div>
           <ul class="food-lists">
+            <% if @management1.present? %>
             <% @management1.each do |management| %>
               <li class="list">
                 <div class="block">
@@ -13,11 +14,13 @@
                 </div>
               </li>
             <% end %>
+            <% end %>
           </ul>
       </div>
       <div class="meat">
         <div class="food-meat">肉・魚・卵など</div>
           <ul class="food-lists">
+            <% if @management2.present? %>
             <% @management2.each do |management| %>
               <li class="list">
                 <div class="block">
@@ -26,11 +29,13 @@
                 </div>
               </li>
             <% end %>
+            <% end %>
           </ul>
       </div>
       <div class="frozen">
         <div class="food-frozen">冷凍</div>
           <ul class="food-lists">
+            <% if @management3.present? %>
             <% @management3.each do |management| %>
               <li class="list">
                 <div class="block">
@@ -39,11 +44,13 @@
                 </div>
               </li>
             <% end %>
+            <% end %>
           </ul>
       </div>
       <div class="drink">
         <div class="food-drink">飲料水</div>
           <ul class="food-lists">
+            <% if @management4.present? %>
             <% @management4.each do |management| %>
               <li class="list">
                 <div class="block">
@@ -52,11 +59,13 @@
                 </div>
               </li>
             <% end %>
+            <% end %>
           </ul>
       </div>
       <div class="seasoning">
         <div class="food-seasoning">調味料</div>
           <ul class="food-lists">
+            <% if @management5.present? %>
             <% @management5.each do |management| %>
               <li class="list">
                 <div class="block">
@@ -65,11 +74,13 @@
                 </div>
               </li>
             <% end %>
+            <% end %>
           </ul>
       </div>
       <div class="etc">
         <div class="food-etc">その他</div>
           <ul class="food-lists">
+            <% if @management6.present? %>
             <% @management6.each do |management| %>
               <li class="list">
                 <div class="block">
@@ -78,6 +89,7 @@
                 </div>
               </li>
             <% end %>
+            <% end %>
           </ul>
       </div>
     </div>
@@ -85,7 +97,7 @@
       <div class="form-title">入力フォーム</div>
         <div class="form-main">
           <%= form_with model: @management, url: managements_path, method: :post, class: 'item-management', local: true do |f| %>
-            <%= render 'shared/error_messages', model: f.object %>
+          <%= render 'shared/error_messages', model: f.object %>
             <div class="form-group">
               <div class='form-text-wrap'>
                 <label class="form-text">食材名</label>
