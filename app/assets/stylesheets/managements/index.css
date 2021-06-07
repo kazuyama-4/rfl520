@@ -7,7 +7,8 @@
 }
 /* left */
 .content-left {
-  height: 100%;
+  height: 80vh;
+  width: 30vw;
   background-color: white;
   border: 1px solid black;
   margin-right: 60px;
@@ -58,6 +59,7 @@
 .food-lists {
   display: flex;
   width:50%;
+  height: 10vh;
   margin-left: 20px;
 }
 .food-lists>.list{
