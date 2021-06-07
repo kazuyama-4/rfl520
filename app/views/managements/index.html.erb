@@ -4,75 +4,88 @@
     <div class="content-left">
       <div class="vegetable">
         <div class="food-vegetable">野菜・果物</div>
-        <% @management1.each do |management| %>
-        <ul class="food">
-          <li class="food-detail">
-            <%= management.item %>
-            <%= management.deadline %>
-          </li>
-        </ul>
-        <% end %>
+          <ul class="food-lists">
+            <% @management1.each do |management| %>
+              <li class="list">
+                <div class="block">
+                  <div class="food_item"><%= management.item %></div>
+                  <div class="food-deadline"><%= management.deadline %></div>
+                </div>
+              </li>
+            <% end %>
+          </ul>
       </div>
       <div class="meat">
         <div class="food-meat">肉・魚・卵など</div>
-        <% @management2.each do |management| %>
-        <ul class="food">
-          <li class="food-detail">
-            <%= management.item %>
-            <%= management.deadline %>
-          </li>
-        </ul>
-        <% end %>
+          <ul class="food-lists">
+            <% @management2.each do |management| %>
+              <li class="list">
+                <div class="block">
+                  <div class="food_item"><%= management.item %></div>
+                  <div class="food-deadline"><%= management.deadline %></div>
+                </div>
+              </li>
+            <% end %>
+          </ul>
       </div>
       <div class="frozen">
         <div class="food-frozen">冷凍</div>
-        <% @management3.each do |management| %>
-        <ul class="food">
-          <li class="food-detail">
-            <%= management.item %>
-            <%= management.deadline %>
-          </li>
-        </ul>
-        <% end %>
+          <ul class="food-lists">
+            <% @management3.each do |management| %>
+              <li class="list">
+                <div class="block">
+                  <div class="food_item"><%= management.item %></div>
+                  <div class="food-deadline"><%= management.deadline %></div>
+                </div>
+              </li>
+            <% end %>
+          </ul>
       </div>
       <div class="drink">
         <div class="food-drink">飲料水</div>
-        <% @management4.each do |management| %>
-        <ul class="food">
-          <li class="food-detail">
-            <%= management.item %>
-            <%= management.deadline %>
-          </li>
-        </ul>
-        <% end %>
+          <ul class="food-lists">
+            <% @management4.each do |management| %>
+              <li class="list">
+                <div class="block">
+                  <div class="food_item"><%= management.item %></div>
+                  <div class="food-deadline"><%= management.deadline %></div>
+                </div>
+              </li>
+            <% end %>
+          </ul>
       </div>
       <div class="seasoning">
         <div class="food-seasoning">調味料</div>
-        <% @management5.each do |management| %>
-        <ul class="food">
-          <li class="food-detail">
-            <%= management.item %>
-            <%= management.deadline %>
-          </li>
-        </ul>
-        <% end %>
+          <ul class="food-lists">
+            <% @management5.each do |management| %>
+              <li class="list">
+                <div class="block">
+                  <div class="food_item"><%= management.item %></div>
+                  <div class="food-deadline"><%= management.deadline %></div>
+                </div>
+              </li>
+            <% end %>
+          </ul>
       </div>
       <div class="etc">
-      <div class="food-etc">その他</div>
-        <% @management6.each do |management| %>
-        <ul class="food">
-          <li class="food-detail">
-            <%= management.item %>
-            <%= management.deadline %>
-          </li>
-        </ul>
-        <% end %>
+        <div class="food-etc">その他</div>
+          <ul class="food-lists">
+            <% @management6.each do |management| %>
+              <li class="list">
+                <div class="block">
+                  <div class="food_item"><%= management.item %></div>
+                  <div class="food-deadline"><%= management.deadline %></div>
+                </div>
+              </li>
+            <% end %>
+          </ul>
       </div>
     </div>
     <div class="content-right">
       <div class="form-title">入力フォーム</div>
         <div class="form-main">
           <%= form_with model: @management, url: managements_path, method: :post, class: 'item-management', local: true do |f| %>
+            <%= render 'shared/error_messages', model: f.object %>
             <div class="form-group">
               <div class='form-text-wrap'>
                 <label class="form-text">食材名</label>

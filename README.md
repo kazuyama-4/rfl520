@@ -11,6 +11,7 @@
 ## Association
 
 - has_many :managements
+- has_many :shops
 
 ## managements テーブル
 
@@ -20,6 +21,16 @@
 | category_id | integer    | null:false                     |
 | deadline    | date       | null:false                     |
 | user        | references | null: false, foreign_key: true |
+
+## Association
+
+- belongs_to :user
+
+## shops テーブル
+
+| Column      | Type       | Options                             |
+| ----------- | ---------- | ------------------------------ |
+| stuff       | string     | null:false                     |
 
 ## Association
 

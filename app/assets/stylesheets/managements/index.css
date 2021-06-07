@@ -7,67 +7,74 @@
 }
 /* left */
 .content-left {
-  width: 79vh;
+  height: 100%;
   background-color: white;
   border: 1px solid black;
   margin-right: 60px;
   flex-basis: auto;
 }
 .food-vegetable {
-  width: 43vw;
-  height: 5vh;
+  width: 100%;
+  height: 16%;
   font-size: 20px;
   text-align: center;
   background-color: chartreuse;
 }
 .food-meat {
-  width: 43vw;
-  height: 5vh;
+  width: 100%;
+  height: 16%;
   font-size: 20px;
   text-align: center;
   background-color: crimson;
 }
 .food-frozen {
-  width: 43vw;
-  height: 5vh;
+  width: 100%;
+  height: 16%;
   font-size: 20px;
   text-align: center;
   background-color: skyblue;
 }
 .food-drink {
-  width: 43vw;
-  height: 5vh;
+  width: 100%;
+  height: 16%;
   font-size: 20px;
   text-align: center;
   background-color: yellow;
 }
 .food-seasoning {
-  width: 43vw;
-  height: 5vh;
+  width: 100%;
+  height: 16%;
   font-size: 20px;
   text-align: center;
   background-color: darksalmon;
 }
 .food-etc {
-  width: 43vw;
-  height: 5vh;
+  width: 100%;
+  height: 16%;
   font-size: 20px;
   text-align: center;
   background-color: gray;
 }
-.food {
-  width: 100vw;
-  list-style: none;
+.food-lists {
   display: flex;
+  width:50%;
+  margin-left: 20px;
 }
-.food-detail {
-  width: 37vh;
-  padding: 1vw;
-  display: flex;
+.food-lists>.list{
+  width: 50%;
+  float:left;
+  margin-left: 20px;
+} 
+.block {
+  display: inline-block;
+  width: 100%;
+}
+.food-deadline {
+  color: orange;
 }
 /* right */
 .content-right {
-  height: 70vh;
+  height: 100%;
   width: calc(100vw - 80vw);
   margin: 10px 10px;
   border-radius: 10px;

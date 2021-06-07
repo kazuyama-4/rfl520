@@ -1,5 +1,4 @@
 .shop {
-  flex-basis: auto;
   width: 100vw;
   display: flex;
   padding: 30px 60px;
@@ -7,19 +6,28 @@
 }
 /* left */
 .shop-list {
-  flex-basis: auto;
-  width: 79vh;
+  width: 80vh;
   background-color: white;
   border: 1px solid black;
   margin-right: 60px;
 }
-.food-vegetable {
-  width: 43vw;
+.food-shop {
+  width: 100%;
   font-size: 30px;
   text-align: center;
   background-color: chartreuse;
 }
-
+.shop-lists {
+  display: flex;
+  width:50%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.shop-lists>.list{
+  width: 50%;
+  float:left;
+  margin-left: 20px;
+} 
 /* right */
 .shop-purpose {
   height: 35vh;
@@ -57,7 +65,7 @@
   font-weight: bold;
   width: 10vw;
 }
-.form__text-field　js-form__text-field {
+.js-form__text-field {
   width: 50%;
   margin-top: 5px;
   height: 15px;
@@ -75,11 +83,11 @@
   width: 80%;
   text-align: center;
 }
-.form__submit　js-submit {
+.js-submit {
   background: greenyellow;
   border: 1px solid greenyellow;
   color: #fff;
-  width: 60%;
+  width: 30%;
   height: 40px;
   font-size: 14px;
   margin-bottom: 4vh;
