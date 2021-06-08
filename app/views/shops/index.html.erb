@@ -8,6 +8,9 @@
             <% @shops.each do |shop| %>
               <li class="list"><%= shop.stuff %></li>
             <% end %>
+            <div class="destroy-box">
+              <%= link_to "リセット", "/shops/#{@shops.ids}", method: :delete, class:"destroy" %>
+            </div>
           </ul>
       </div>
     </div>

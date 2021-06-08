@@ -1,9 +1,9 @@
 class ShopsController < ApplicationController
   def index
     @shop = Shop.new
-    @shops = Shop.order('created_at ASC')
+    @shops = Shop.includes(:user)
   end
-  
+
   def create
     @shop = Shop.new(shop_params)
     if @shop.save
@@ -12,6 +12,11 @@ class ShopsController < ApplicationController
       @shops = Shop.includes(:user)
       render :index
     end
+  end
+
+  def destroy
+    @shops = Shop.includes(:user)
+    redirect_to shops_path if @shops.where(user_id: id = current_user.id).delete_all
   end
 
   private

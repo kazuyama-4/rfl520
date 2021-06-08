@@ -7,10 +7,13 @@
           <ul class="food-lists">
             <% if @management1.present? %>
             <% @management1.each do |management| %>
-              <li class="list">
-                <div class="block">
-                  <div class="food_item"><%= management.item %></div>
-                  <div class="food-deadline"><%= management.deadline %></div>
+              <li class="list",id="list">
+                <div class="block",id="block">
+                  <div class="food_item",id="food_item"><%= management.item %></div>
+                  <div class="food-deadline",id="food-deadline"><%= management.deadline %></div>
+                  <div class="destroy-stock">
+                    <%= link_to "削除", management_path(management.id), method: :delete, class:"stock-delete" %>
+                  </div>
                 </div>
               </li>
             <% end %>
@@ -26,6 +29,9 @@
                 <div class="block">
                   <div class="food_item"><%= management.item %></div>
                   <div class="food-deadline"><%= management.deadline %></div>
+                  <div class="destroy-stock">
+                    <%= link_to "削除", management_path(management.id), method: :delete, class:"stock-delete" %>
+                  </div>
                 </div>
               </li>
             <% end %>
@@ -41,6 +47,9 @@
                 <div class="block">
                   <div class="food_item"><%= management.item %></div>
                   <div class="food-deadline"><%= management.deadline %></div>
+                  <div class="destroy-stock">
+                    <%= link_to "削除", management_path(management.id), method: :delete, class:"stock-delete" %>
+                  </div>
                 </div>
               </li>
             <% end %>
@@ -56,6 +65,9 @@
                 <div class="block">
                   <div class="food_item"><%= management.item %></div>
                   <div class="food-deadline"><%= management.deadline %></div>
+                  <div class="destroy-stock">
+                    <%= link_to "削除", management_path(management.id), method: :delete, class:"stock-delete" %>
+                  </div>
                 </div>
               </li>
             <% end %>
@@ -71,6 +83,9 @@
                 <div class="block">
                   <div class="food_item"><%= management.item %></div>
                   <div class="food-deadline"><%= management.deadline %></div>
+                  <div class="destroy-stock">
+                    <%= link_to "削除", management_path(management.id), method: :delete, class:"stock-delete" %>
+                  </div>
                 </div>
               </li>
             <% end %>
@@ -86,6 +101,9 @@
                 <div class="block">
                   <div class="food_item"><%= management.item %></div>
                   <div class="food-deadline"><%= management.deadline %></div>
+                  <div class="destroy-stock">
+                    <%= link_to "削除", management_path(management.id), method: :delete, class:"stock-delete" %>
+                  </div>
                 </div>
               </li>
             <% end %>

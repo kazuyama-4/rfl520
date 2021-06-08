@@ -33,5 +33,24 @@
       </li>
     </ul>
   </div>
+  <div class="purpose-list">
+    <div class="shop-list">
+      <div class="shopping">
+        <div class="food-shop">買い物リスト</div>
+          <ul class="shop-lists">
+            <% if @shops.present? %>
+            <% @shops.each do |shop| %>
+              <li class="list"><%= shop.stuff %></li>
+            <% end %>
+            <% else %>
+              <li class="list">卵<li>
+              <li class="list">豚肩ロース<li>
+              <li class="list">にんじん<li>
+              <li class="list">ジャガイモ<li>
+            <% end %>
+          </ul>
+      </div>
+    </div>
+  </div>
 </div>
 <%= render "shared/footer" %>

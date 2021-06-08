@@ -19,12 +19,14 @@ class ManagementsController < ApplicationController
     end
   end
 
+  def destroy
+    Management.find(params[:id]).destroy
+    redirect_to managements_path
+  end
+
   private
 
   def management_params
     params.require(:management).permit(:item, :category_id, :deadline).merge(user_id: current_user.id)
-  end
-
-  def management_set
   end
 end

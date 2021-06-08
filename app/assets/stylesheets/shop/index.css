@@ -6,7 +6,8 @@
 }
 /* left */
 .shop-list {
-  width: 80vh;
+  width: 70vw;
+  height: 100vh;
   background-color: white;
   border: 1px solid black;
   margin-right: 60px;
@@ -18,16 +19,30 @@
   background-color: chartreuse;
 }
 .shop-lists {
-  display: flex;
   width:50%;
+  display: flex;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 10%;
+  position: relative;
 }
 .shop-lists>.list{
   width: 50%;
   float:left;
   margin-left: 20px;
-} 
+}
+.destroy-box {
+  background-color: red;
+  width: 5vw;
+  height: 4vh;
+  position: absolute;
+  margin-left: 140%;
+  margin-top: 100%;
+  text-align: center;
+  padding-top: 1vh;
+}
+.destroy {
+  color: black;
+}
 /* right */
 .shop-purpose {
   height: 35vh;

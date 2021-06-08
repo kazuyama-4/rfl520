@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 /* 画面上部の「RFL」帯部分 */
 .title-contents {
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   background-image: image-url('top.jpg');
   background-size: cover;
@@ -80,5 +80,8 @@
   margin-bottom: 20px;
   width: 100%;
 }
-
 /* //RFLの特徴 */
+.purpose-list {
+  padding-left: 15%;
+  padding-top: 10%;
+}
