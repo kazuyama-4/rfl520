@@ -1,7 +1,4 @@
-# The Exhibition of Portfolios
-
-## [アプリケーション名]	
-〜ISE(Improve Shopping Efficiency)〜
+# [アプリケーション名]：ISE(Improve Shopping Efficiency)
 [![Image from Gyazo](https://i.gyazo.com/416aeae2225bc39d69b75c5eb6b16c5a.jpg)](https://gyazo.com/416aeae2225bc39d69b75c5eb6b16c5a)
 ## [アプリケーション概要]
 *ユーザー管理機能*  
