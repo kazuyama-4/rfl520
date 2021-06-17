@@ -52,3 +52,4 @@ production:
   database: rfl520_production
   username: rfl520
   password: <%= ENV['RFL520_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
